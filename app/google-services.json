@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792841699829",
+    "project_id": "dailyaffirmationfirestore",
+    "storage_bucket": "dailyaffirmationfirestore.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792841699829:android:f9081a833f465b2f0120bc",
+        "android_client_info": {
+          "package_name": "com.example.dailyaffirmationfirestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPWIq0lUYlwIDkvWvJ9ZOJ3wsR3o0vrIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
