@@ -18,6 +18,14 @@ A modern Android application built using **Kotlin**, **Jetpack Compose**, and **
 
 ---
 
+🎨 Design Approach
+I enjoy experimenting with different color palettes, layouts, and UI styles across my projects.
+Instead of reusing the same design pattern, I customize each application's 
+appearance to match its purpose and user experience. For the Daily Affirmations App,
+I chose a soft pastel color scheme and clean layout to create a calm, positive, and encouraging environment for users.
+
+---
+
 ## 📱 Screenshots
 
 ### Empty State
