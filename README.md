@@ -33,7 +33,7 @@ I chose a soft pastel color scheme and clean layout to create a calm, positive, 
 The initial screen displayed when no affirmations have been added yet.
 This provides a clean and user-friendly experience while encouraging users to create their first affirmation.
 
-<img width="234" height="497" alt="Screenshot 2026-06-16 at 4 04 40 PM" src="https://github.com/user-attachments/assets/2b08988e-193e-4d6d-b20d-c66e59ca95c6" />
+<img width="237" height="457" alt="Screenshot 2026-06-16 at 4 11 23 PM" src="https://github.com/user-attachments/assets/6a6afef7-e241-44f2-8ea8-f434409ff5c2" />
 
 
 ---
@@ -43,7 +43,7 @@ The main screen of the application where users can view all their saved affirmat
 Users can easily add, edit, or delete affirmations through a simple and intuitive interface.
 
 
-<img width="240" height="495" alt="Screenshot 2026-06-16 at 4 04 13 PM" src="https://github.com/user-attachments/assets/840ae4e1-cfdf-48de-ac29-41c1d231f250" />
+<img width="234" height="496" alt="Screenshot 2026-06-16 at 4 03 25 PM" src="https://github.com/user-attachments/assets/22686c0b-ef64-46aa-8318-27ac5dc252f0" />
 
 
 ---
@@ -53,7 +53,7 @@ A dialog interface that allows users to update existing affirmations.
 Changes are instantly synchronized with Firebase Firestore and reflected in the UI.
 
 
-<img width="234" height="496" alt="Screenshot 2026-06-16 at 4 03 25 PM" src="https://github.com/user-attachments/assets/22686c0b-ef64-46aa-8318-27ac5dc252f0" />
+<img width="240" height="495" alt="Screenshot 2026-06-16 at 4 04 13 PM" src="https://github.com/user-attachments/assets/840ae4e1-cfdf-48de-ac29-41c1d231f250" />
 
 
 ---
