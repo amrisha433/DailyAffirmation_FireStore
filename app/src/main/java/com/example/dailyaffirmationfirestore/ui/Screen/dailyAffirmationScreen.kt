@@ -88,9 +88,10 @@ fun DisplayAffirmations(
             },
             modifier = Modifier.align(Alignment.CenterHorizontally),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFFE78CB6)
+                containerColor = Color(0xFFFF69B4)
             ),
-            shape = RoundedCornerShape(50)
+            shape = RoundedCornerShape(50),
+            enabled = affirmationText.isNotBlank()
         ) {
             Text("Save",
                 fontSize = 18.sp,
@@ -143,7 +144,8 @@ fun DisplayAffirmations(
             },
 
             title = {
-                Text("Edit Affirmation")
+                Text("Edit Affirmation",
+                    color = Color(0xFFFF69B4))
             },
 
             text = {
@@ -152,6 +154,9 @@ fun DisplayAffirmations(
                     value = updatedText,
                     onValueChange = {
                         updatedText = it
+                    },
+                    placeholder =  {
+                        Text("Edit your affirmations...")
                     },
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -173,7 +178,10 @@ fun DisplayAffirmations(
                         }
                     }
                 ) {
-                    Text("Update")
+                    Text("Update",
+                        color = Color(0xFFE78CB6),
+                        fontSize = 18.sp
+                    )
                 }
             },
 
@@ -184,7 +192,10 @@ fun DisplayAffirmations(
                         showEditDialog = false
                     }
                 ) {
-                    Text("Cancel")
+                    Text("Cancel",
+                        color = Color(0xFFE78CB6),
+                        fontSize = 18.sp
+                    )
                 }
             }
         )
@@ -204,7 +215,11 @@ fun AffirmationItem(
             .fillMaxWidth()
             .padding(vertical = 4.dp),
         elevation = CardDefaults.cardElevation(4.dp),
-        shape = RoundedCornerShape(12.dp)
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(0xFFF7D6E0)
+        )
+
     ) {
 
         Row(
@@ -214,19 +229,30 @@ fun AffirmationItem(
             verticalAlignment = Alignment.CenterVertically
         ) {
 
-            Text(
-                text = text,
+            Row(
                 modifier = Modifier.weight(1f),
-                fontSize = 18.sp
-            )
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+
+                Text(
+                    text = "🌸",
+                    fontSize = 18.sp
+                )
+
+                Spacer(modifier = Modifier.width(8.dp))
+
+                Text(
+                    text = text,
+                    fontSize = 18.sp
+                )
+            }
 
             IconButton(
                 onClick = onEdit
             ) {
                 Icon(
                     imageVector = Icons.Default.Edit,
-                    contentDescription = "Edit",
-                    tint = Color(0xFFE78CB6)
+                    contentDescription = "Edit"
                 )
             }
 
@@ -235,8 +261,7 @@ fun AffirmationItem(
             ) {
                 Icon(
                     imageVector = Icons.Default.Delete,
-                    contentDescription = "Delete",
-                    tint = Color(0xFFE78CB6)
+                    contentDescription = "Delete"
                 )
             }
         }
